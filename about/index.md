@@ -1,6 +1,9 @@
 ---
 layout: page
+title: 关于
 type: about
 ---
 
-Building...
+## 关于博客
+
+## 关于我

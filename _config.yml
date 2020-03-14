@@ -5,32 +5,13 @@ author: 白鹡鸰
 language: zh-Hans
 date_format: '%Y-%m-%d'
 
-
 url:
 baseurl:
 permalink: pretty
 
-# Pagination
 paginate: 5
-#paginate_path: "/page:num/"
-#archive:
-  #paginate: 10
-  #paginate_path: "/page:num/"
-#category:
-  #paginate: 10
-  #paginate_path: "/page:num/"
-#tag:
-  #paginate: 10
-  #paginate_path: "/page:num/"
-
-# Handling Reading
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "README_en.md", "vendor"]
-
-# Separator
-#excerpt_separator: <!-- more -->
-
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "vendor"]
 # Code Highlighter
-## 'pygments' is unsupported on GitHub Pages now.
 highlighter: rouge
 highlight:
   line_number: true
@@ -73,16 +54,12 @@ favicon: /assets/favicon.ico
 # Set default keywords (Use a comma to separate)
 keywords: ""
 
-# Set rss to false to disable feed link.
-# Leave rss as empty to use site's feed link.
-# Set rss to specific value if you have burned your feed already.
 rss: false
 
-# Specify the date when the site was setup
 since: 2020
 
 # icon between year and author @Footer
-authoricon: feather-alt
+authoricon: feather
 
 # Footer `powered-by` and `theme-info` copyright
 copyright: true
@@ -91,16 +68,8 @@ copyright: true
 # SEO Settings
 # ---------------------------------------------------------------
 
-# Canonical, set a canonical link tag in your jekyll, you could use it for your SEO of blog.
-# See: https://support.google.com/webmasters/answer/139066
-# Tips: Before you open this tag, remember set up your URL in _config.yml ( ex. url: http://yourdomain.com )
 canonical: true
-
-# Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
 seo: false
-
-# If true, will add site-subtitle to index page, added in jekyll config.
-# subtitle: Subtitle
 index_with_subtitle: false
 
 
@@ -118,7 +87,7 @@ menu:
 
 menu_icons:
   enable: true
-  KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
+  # KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
   home: home
   about: user
   categories: th
@@ -145,7 +114,7 @@ font:
   enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default)
-  host:
+  host: 
 
   # Global font settings used on <body> element.
   global:
@@ -157,7 +126,7 @@ font:
   # Fallback to `global` font settings.
   headings:
     external: true
-    family:
+    family: 
 
   # Font settings for posts
   # Fallback to `global` font settings.
