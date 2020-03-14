@@ -1,25 +1,17 @@
-# ---------------------------------------------------------------
-# Jekyll & Global Configuration
-## Docs: https://jekyllrb.com/docs/configuration/
-# ---------------------------------------------------------------
-
-# Site
-title: NexT
-subtitle:
-description:
-author: John Doe
-# Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: en
+title: 白鹡鸰今天也在浪
+subtitle: 
+description: 生活记录
+author: 白鹡鸰
+language: zh-Hans
 date_format: '%Y-%m-%d'
 
-# URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
+
 url:
 baseurl:
 permalink: pretty
 
 # Pagination
-paginate: 10
+paginate: 5
 #paginate_path: "/page:num/"
 #archive:
   #paginate: 10
@@ -79,18 +71,18 @@ plugins:
 favicon: /assets/favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Jekyll, NexT"
+keywords: ""
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: false
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2020
 
 # icon between year and author @Footer
-authoricon: heart
+authoricon: feather-alt
 
 # Footer `powered-by` and `theme-info` copyright
 copyright: true
@@ -111,49 +103,34 @@ seo: false
 # subtitle: Subtitle
 index_with_subtitle: false
 
+
 # ---------------------------------------------------------------
 # Menu Settings
 # ---------------------------------------------------------------
 
-# When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories/
-  #about: /about/
+  categories: /categories/
+  about: /about/
   archives: /archives/
-  tags: /tags/
-  #sitemap: /sitemap.xml
-  #commonweal: /404.html
+  # commonweal: /404.html
 
 
-# Enable/Disable menu icons.
-# Icon Mapping:
-#   Map a menu item to a specific FontAwesome icon name.
-#   Key is the name of menu item and value is the name of FontAwesome icon. Key is case-senstive.
-#   When an question mask icon presenting up means that the item has no mapping icon.
 menu_icons:
   enable: true
-  #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
+  KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
   home: home
   about: user
   categories: th
-  schedule: calendar
-  tags: tags
   archives: archive
-  sitemap: sitemap
-  commonweal: heartbeat
-
-
+  # commonweal: heartbeat
 
 
 # ---------------------------------------------------------------
-# Scheme Settings
+# Scheme Settings Muse/Mist/Pisces
 # ---------------------------------------------------------------
 
-# Schemes
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
+scheme: Mist
 
 
 # ---------------------------------------------------------------
@@ -199,8 +176,8 @@ font:
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
-    size:
+    family: 
+    size: 
 
 
 
@@ -213,7 +190,10 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
+social:
+  GitHub: https://github.com/Siren-Blue
+  Zhihu: https://www.zhihu.com/people/ravenclaw-32
+  DouBan: https://www.douban.com/people/77226102/
   #LinkLabel: Link
 
 
@@ -225,10 +205,12 @@ font:
 social_icons:
   enable: true
   # Icon Mappings.
-  # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
+  KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
-  Twitter: twitter
-  Weibo: weibo
+  Zhihu: zhihu
+  # Douban: douban
+  # Twitter: twitter
+  # Weibo: weibo
 
 
 # Sidebar Avatar
@@ -274,10 +256,10 @@ sidebar:
   offset_float: 0
 
   # Back to top in sidebar
-  b2t: false
+  b2t: true
 
   # Scroll percent label in b2t button
-  scrollpercent: false
+  scrollpercent: true
 
 
 # Blog rolls
@@ -353,7 +335,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night eighties
 
 
 # ---------------------------------------------------------------
@@ -736,3 +718,6 @@ images: assets/images
 
 # Theme version
 version: 5.1.1
+
+custom_file_path:
+  style: ./_data/styles.styl
