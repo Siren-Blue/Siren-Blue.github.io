@@ -78,7 +78,8 @@ index_with_subtitle: false
 # ---------------------------------------------------------------
 
 menu:
-  about: /
+  home: /
+  about: /about/
   books: /books/
   notes: /notes/
   logs: /logs/
@@ -87,10 +88,11 @@ menu:
 menu_icons:
   enable: true
   # KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
-  about: home
-  books: bookmark
-  notes: edits
-  logs: box
+  home: home
+  about: arrows-alt
+  books: book
+  notes: sticky-note
+  logs: comment
 
 
 
