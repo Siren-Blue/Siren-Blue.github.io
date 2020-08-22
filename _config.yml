@@ -79,10 +79,10 @@ index_with_subtitle: false
 
 menu:
   home: /
-  about: /about/
   books: /books/
   notes: /notes/
   logs: /logs/
+  about: /about/
 
 
 menu_icons:
